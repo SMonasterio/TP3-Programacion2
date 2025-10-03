@@ -69,6 +69,24 @@ public class TP3 {
         System.out.println("Estado final de las gallinas:");
         g1.mostrarEstado();
         g2.mostrarEstado();
+        
+        //5.Simulación de Nave Espacial
+        //Crear una clase NaveEspacial con los atributos: nombre, combustible.
+        
+        // Crear nave con 50 unidades de combustible
+        NaveEspacial nave1 = new NaveEspacial("Andromeda", 50);
+
+        // Intentar avanzar sin recargar
+        nave1.despegar();
+        nave1.avanzar(30); // necesitaría 60 de combustible
+
+        // Recargar y avanzar correctamente
+        nave1.recargarCombustible(40); // sube a 80 (máximo 100)
+        nave1.avanzar(20); // consume 40
+
+        // Estado final
+        System.out.println("Estado final:");
+        nave1.mostrarEstado();
     }
     
 }
