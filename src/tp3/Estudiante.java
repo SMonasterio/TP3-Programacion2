@@ -56,8 +56,7 @@ public class Estudiante {
     public void mostrarInfo() {
         System.out.println("Nombre: " + getNombre() + " " + getApellido());
         System.out.println("Curso: " + getCurso());
-        System.out.println("Calificación: " + getCalificacion());
-        System.out.println("----------------------------");
+        System.out.println("Calificacion: " + getCalificacion());
     }
 
     public void subirCalificacion(int nota) {
