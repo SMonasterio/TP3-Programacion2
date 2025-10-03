@@ -51,6 +51,24 @@ public class TP3 {
 
         System.out.println("Informacion del libro:");
         libro1.mostrarInfo();
+        
+        //4. Gestión de Gallinas en Granja Digital
+        //a. Crear una clase Gallina con los atributos: idGallina, edad, huevosPuestos
+
+        Gallina g1 = new Gallina(1, 2);
+        Gallina g2 = new Gallina(2, 1);
+
+        g1.ponerHuevo();
+        g1.ponerHuevo();
+        g1.envejecer();
+
+        g2.ponerHuevo();
+        g2.envejecer();
+        g2.envejecer();
+
+        System.out.println("Estado final de las gallinas:");
+        g1.mostrarEstado();
+        g2.mostrarEstado();
     }
     
 }
