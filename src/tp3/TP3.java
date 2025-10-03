@@ -38,6 +38,19 @@ public class TP3 {
         mascota1.cumplirAnios();
         System.out.println("Despues de un anio:");
         mascota1.mostrarInfo();
+        
+        //3. Encapsulamiento con la Clase Libro
+        //a. Crear una clase Libro con atributos privados: titulo, autor, añoPublicacion.
+
+        Libro libro1 = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943);
+        
+        // set año invalido
+        libro1.setAñoPublicacion(3025);
+        //sett año valido
+        libro1.setAñoPublicacion(1995);
+
+        System.out.println("Informacion del libro:");
+        libro1.mostrarInfo();
     }
     
 }
